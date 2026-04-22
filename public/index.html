@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mohit Yadav - BCA First Year Student | Full Stack Web Developer | Portfolio">
+    <meta name="keywords" content="Web Developer, Portfolio, BCA Student, Full Stack, Node.js, React">
+    <meta name="author" content="Mohit Yadav">
+    <meta property="og:title" content="Mohit Yadav - Web Developer Portfolio">
+    <meta property="og:description" content="Futuristic portfolio showcasing projects and skills">
+    <meta property="og:image" content="https://yoursite.com/images/og-image.png">
+    
+    <title>Mohit Yadav - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+    <!-- Cursor Element -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-follower"></div>
+
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="gradient-1"></div>
+        <div class="gradient-2"></div>
+        <div class="gradient-3"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <span class="logo-text">MY</span>
+                    <div class="logo-glow"></div>
+                </div>
+                
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="text-gradient">Hi, I'm</span>
+                        <span class="name-highlight">Mohit Yadav</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        <span class="typewriter">BCA First Year Student | Full Stack Web Developer</span>
+                    </p>
+                    <p class="hero-description">
+                        Crafting beautiful, responsive web experiences with cutting-edge technologies. Passionate about turning ideas into interactive digital solutions.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })">
+                            <span>View My Work</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                        <button class="btn btn-secondary" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">
+                            <span>Get In Touch</span>
+                            <i class="fas fa-envelope"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-card">
+                        <div class="card-inner">
+                            <p>Building the future, one line at a time</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm <strong>Mohit Yadav</strong>, a BCA first-year student with a passion for web development. Currently, I'm on a journey to master full-stack development using modern technologies like Node.js, React, and MongoDB.
+                    </p>
+                    <p>
+                        My interest in web development stems from the desire to create beautiful, functional, and user-friendly digital experiences. I believe in the power of clean code, creativity, and continuous learning.
+                    </p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h3>2</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>100%</h3>
+                            <p>Dedication</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>∞</h3>
+                            <p>Learning</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <div class="glitch-image">
+                            <img src="profile.jpeg" alt="Mohit Yadav">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+                <!-- Frontend -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>HTML5</span>
+                                <span class="proficiency">60%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 60%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>CSS3 & SASS</span>
+                                <span class="proficiency">55%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 55%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>JavaScript ES6+</span>
+                                <span class="proficiency">50%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 50%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+            </div>
+
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Projects will be loaded here dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Journey & Achievements</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>BCA Student</h3>
+                        <p class="timeline-date">2025 - Present</p>
+                        <p>Currently pursuing Bachelor of Computer Applications at Dev Bhoomi Uttarakhand University. Focusing on core CS fundamentals and web development specialization.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Web Development Fundamentals</h3>
+                        <p class="timeline-date">2026</p>
+                        <p>Mastered HTML5, CSS3, and JavaScript. Created responsive websites and interactive web applications.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-subtitle">Feel free to reach out. I'd love to hear from you!</p>
+            
+            <div class="contact-wrapper">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Your Name">
+                        <span class="error-message" id="nameError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="your@email.com">
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" required placeholder="Your message..." rows="5"></textarea>
+                        <span class="error-message" id="messageError"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="submitBtn">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>mohityadavy274@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 6392111474</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>India</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <a href="https://github.com/mohityadavfsd" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/mohit-yadav-9a56ba381?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Mohit Yadav. All rights reserved.</p>
+                <p>Crafted with <i class="fas fa-heart"></i> by Mohit Yadav</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/animations.js"></script>
+</body>
+</html>
